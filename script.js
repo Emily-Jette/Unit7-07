@@ -16,8 +16,8 @@ function calculator () {
   firstNum = parseInt(firstNum)
   secondNum = document.getElementById('num2').value
   secondNum = parseInt(secondNum)
-  // makes negative numbers into positive 
-  if (firstNum < 0) { 
+  // makes negative numbers into positive
+  if (firstNum < 0) {
     negative = !negative
     firstNum = Math.abs(firstNum)
   }
@@ -29,7 +29,7 @@ function calculator () {
   for (counter = 0; counter < firstNum; counter++) {
     answer = answer + secondNum
   }
-  if(negative) {
+  if (negative) {
     answer = 0 - answer
   }
   document.getElementById('product').innerHTML = answer
